@@ -96,7 +96,7 @@ class BarbicanDriver(object):
                       .format((i + 1), CONF.secret_create_attempts))
             try:
                 return self._do_create_secret(secret_args)
-            except Exception as e:
+            except Exception:
                 if i == (CONF.secret_create_attempts - 1):
                     # This was the last attempt, re-raise any error
                     raise

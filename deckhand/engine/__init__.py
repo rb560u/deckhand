@@ -14,5 +14,5 @@
 
 from deckhand.engine.render import *  # noqa
 
-__all__ = ('render',
+__all__ = ('render',  # noqa: F405
            'validate_render')
